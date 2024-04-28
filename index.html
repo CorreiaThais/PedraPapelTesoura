@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+    <header>
+        <title>Pedra Papel Tesoura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <body>
+        <h1 style="text-align: center">Pedra, Papel ou Tesoura!</h1>
+        <h2 style="text-align: center" class="vencedor">Vamos jogar!</h2>
+        <hr>
+
+        <div class="align">
+            <div class="player-options">
+                <div><img opt="pedra" src="images/rock.png"></div>
+                <div><img opt="papel" src="images/paper.png"></div>
+                <div><img opt="tesoura" src="images/scisor.png"></div>
+            </div>
+            <div class="enemy-options">
+                <div><img opt="pedra" src="images/rock.png"></div>
+                <div><img opt="papel" src="images/paper.png"></div>
+                <div><img opt="tesoura" src="images/scisor.png"></div>
+            </div>
+            <div class="placar">
+                <div>Placar Player 1</div>
+                <h3 id="placar-player">0</h3> 
+                <div>Placar Adversário</div>
+                <h3 id="placar-enemy">0</h3>
+                <h3 id="mensagem-vitoria"></h3>
+                <button id="botao-reiniciar">Reiniciar partida</button>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>

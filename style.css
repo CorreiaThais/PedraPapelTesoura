@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.align{
+    display: flex;
+}
+
+.player-options img,
+.enemy-options img
+{
+    max-width: 200px;
+    max-height: 200px;
+    opacity: 0.3;
+    cursor: pointer;                
+}
+
+.player-options,
+.enemy-options 
+{
+    text-align: center;
+    width: 33.3%;
+}
+
+.placar{
+    margin-top: 20px;
+    padding: 10px 10px;
+    width: 33.3%;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#placar-player,
+#placar-enemy{
+    padding: 10px 10px;
+    border-bottom: 1px solid #bdbdbd;
+    width: 80%;
+}
+
+#botao-reiniciar{
+    height: 30px;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #bdbdbd;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.desabilitado{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+    .player-options img,
+    .enemy-options img
+    {
+        max-width: 130px;
+        max-height: 130px;          
+    }
+
+    #mensagem-vitoria{
+        font-size: 17px;
+    }
+}
